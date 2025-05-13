@@ -1,0 +1,13 @@
+section{
+    padding: 100px 30px;
+}
+
+.wrapper{
+    max-width: 1560px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+img{
+    max-width: 100%;
+}
