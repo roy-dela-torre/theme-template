@@ -1,13 +1,180 @@
-section{
+section {
     padding: 100px 30px;
 }
 
-.wrapper{
+.wrapper {
     max-width: 1560px;
     margin: 0 auto;
     width: 100%;
 }
 
-img{
+img {
     max-width: 100%;
+}
+
+section .accordion-button:not(.collapsed)::after {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none"><path d="M21.2719 22.6618L17.0293 18.4192L12.7867 22.6618L11.3724 21.2476L15.6151 17.005L11.3724 12.7623L12.7867 11.3481L17.0293 15.5907L21.2719 11.3481L22.6862 12.7623L18.4435 17.005L22.6862 21.2476L21.2719 22.6618Z" fill="%23111111"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 34px;
+    height: 34px;
+    background-size: contain;
+    transform: rotate(90deg);
+}
+
+section .accordion-button::after {
+    transform: rotate(45deg);
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none"><path d="M21.2719 22.6618L17.0293 18.4192L12.7867 22.6618L11.3724 21.2476L15.6151 17.005L11.3724 12.7623L12.7867 11.3481L17.0293 15.5907L21.2719 11.3481L22.6862 12.7623L18.4435 17.005L22.6862 21.2476L21.2719 22.6618Z" fill="%23111111"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 34px;
+    height: 34px;
+    background-size: contain;
+}
+
+section .accordion-item:first-of-type>.accordion-header .accordion-button,
+section .accordion-button {
+    border: none;
+    color: unset;
+    box-shadow: none;
+    padding: 0;
+    font-size: unset;
+}
+
+section .accordion-button:not(.collapsed) {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+section .accordion,
+section .accordion-item {
+    all: unset;
+}
+
+section .accordion-button {
+    background-color: transparent;
+}
+
+section .accordion-button:focus,
+section .accordion-button:not(.collapsed):focus {
+    outline: none;
+    box-shadow: none;
+}
+
+section .accordion-body {
+    padding: 0;
+}
+
+[popover]:-internal-popover-in-top-layer::-webkit-backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+[popover]:-internal-popover-in-top-layer::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+[popover]:popover-open:not(dialog) {
+    border: none;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+[popover]:popover-open:not(dialog) .content {
+    background-color: white;
+}
+
+input:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+
+form {
+    margin-bottom: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    /* For Firefox */
+}
+
+form.wpcf7-form.submitting .wpcf7-spinner {
+    display: block;
+}
+
+.wpcf7 form .wpcf7-response-output {
+    margin: 10px auto;
+}
+
+form.wpcf7-form.init .wpcf7-spinner {
+    display: none;
+}
+
+section ul,
+section ol {
+    margin-bottom: 0;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+:is(dir, menu, ol, ul) :is(dir, menu, ol, ul) ul,
+:is(dir, menu, ol, ul) ul {
+    list-style-type: disc;
+}
+
+section ul+p {
+    margin-top: 16px;
+}
+
+
+
+@media (max-width: 1200px) {
+    section {
+        padding: 70px 30px !important;
+    }
+
+    h1 {
+        font-size: 40px !important;
+    }
+
+    h2 {
+        font-size: 32px !important;
+    }
+
+    h3 {
+        font-size: 25px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .mw-lg-100 {
+        max-width: 100% !important;
+    }
+}
+
+@media (max-width: 767px) {
+    section {
+        padding: 50px 20px !important;
+    }
+
+    h1 {
+        font-size: 35px !important;
+    }
+
+    h2 {
+        font-size: 30px !important;
+    }
+
+    h3 {
+        font-size: 24px !important;
+    }
 }
