@@ -38,14 +38,7 @@ function setEqualHeightForSection(sectionSelector, secondSelector, groupSizeBrea
 
 $(document).ready(function () {
     $(window).on('load', function () {
-        $('img').each(function () {
-            if (!$(this).attr('src')) {
-                $(this).attr('src', 'http://i.giphy.com/9J7tdYltWyXIY.gif'); // fallback if no src
-            }
-        });
-        $('img').on('error', function () {
-            $(this).attr('src', 'http://i.giphy.com/9J7tdYltWyXIY.gif'); // fallback if error
-        });
+
     });
 
     $('img[loading="lazy"]').each(function () {

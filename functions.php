@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Theme setup and customization functions.
  *
@@ -76,7 +77,8 @@ function wysiwyg_excerpt_meta_box_callback($post)
 }
 
 
-function save_active_plugins_list() {
+function save_active_plugins_list()
+{
     $active_plugins = get_option('active_plugins');
     if (is_multisite()) {
         $network_plugins = get_site_option('active_sitewide_plugins');

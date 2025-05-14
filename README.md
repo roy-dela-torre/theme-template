@@ -1,63 +1,89 @@
 ﻿=== Theme Name ===
-Contributors: 
+## Contributors
 
+*List your name or GitHub username here.*
 
-== Description ==
+---
 
-Theme Template is a clean and flexible WordPress theme designed for developers and designers who want a customizable foundation. Inspired by the structure of Shopify’s `theme.liquid`, this theme supports a modular layout, reusable components, and integrates modern best practices while staying lightweight.
+## Description
 
-Perfect for blogs, business sites, or portfolio pages, it provides a great starting point without unnecessary bloat. Compatible with major plugins and optimized for speed and SEO.
+**Theme Template** is a modern, developer-friendly WordPress theme built for flexibility and customization. Drawing inspiration from Shopify’s `theme.liquid` architecture, it features a modular layout, reusable components, and adheres to current best practices—all while remaining lightweight and efficient.
 
-== Installation ==
+Ideal for blogs, business websites, or portfolios, this theme offers a solid foundation without unnecessary features. It’s compatible with popular plugins and optimized for both speed and SEO.
+
+---
+
+## Installation
 
 1. Upload the theme folder to `/wp-content/themes/`
-2. Go to Appearance > Themes in the dashboard
+2. In your WordPress dashboard, navigate to Appearance > Themes
 3. Activate the theme
 
-== Changelog ==
+---
 
-= 1.0.0 =
-* Initial release
+## Changelog
 
-== Credits ==
+### 1.0.0
+- Initial release
 
-* normalize.css – Nicolas Gallagher (MIT License)
+---
 
-== License ==
+## Credits
+
+- **normalize.css** – Nicolas Gallagher (MIT License)
+
+---
+
+## License
 
 This theme is licensed under the GPL v2 or later.
 
-== Recommended Plugins ==
+---
 
-These plugins are commonly used with this theme to extend functionality:
+## Recommended Plugins
 
-- **Advanced Contact Form 7** – Enhanced features for Contact Form 7.
-- **Contact Form 7 Database Addon (CFDB7)** – Save form submissions to the database.
-- **Contact Form 7 Redirection** – Redirect users after form submission.
-- **Redirection** – Manage 301 redirects and track 404 errors.
-- **Better Search Replace** – Search and replace data in your database.
-- **Advanced Custom Fields (ACF)** – Add custom fields to posts and pages.
-- **Custom Post Type UI** – Create and manage custom post types and taxonomies.
-- **Yoast SEO** – Comprehensive SEO toolkit for optimizing your site’s search engine visibility.
+Enhance your site’s functionality with these plugins:
 
-Refer to each plugin’s documentation for installation and usage details.
+- **Advanced Contact Form 7** – Adds advanced features to Contact Form 7
+- **Contact Form 7 Database Addon (CFDB7)** – Saves form submissions to the database
+- **Contact Form 7 Redirection** – Redirects users after form submission
+- **Redirection** – Manages 301 redirects and tracks 404 errors
+- **Better Search Replace** – Search and replace data in your database
+- **Advanced Custom Fields (ACF)** – Add custom fields to posts and pages
+- **Custom Post Type UI** – Create and manage custom post types and taxonomies
+- **Yoast SEO** – Comprehensive SEO toolkit
 
-== Optimization Tips ==
+Refer to each plugin’s documentation for installation and usage.
 
-To maximize performance and SEO with this theme, consider the following:
+---
+
+## Optimization Tips
+
+To maximize performance and SEO:
 
 - **SEO-Friendly Headers:**  
-    Use semantic HTML header tags (`<h1>`, `<h2>`, etc.) in your templates and content. Ensure each page has a single `<h1>` and logical heading structure for accessibility and SEO.
+    Use semantic HTML header tags (`<h1>`, `<h2>`, etc.) in your templates. Ensure each page has a single `<h1>` and a logical heading structure for accessibility and SEO.
 
 - **Image Optimization:**  
-    - Compress images before uploading.  
-    - Ensure individual image files are ideally under 500KB and never exceed 1MB.  
-    - Use modern formats like WebP where possible.  
-    - Add descriptive `alt` text to all images for accessibility and SEO.
+    - Compress images before uploading  
+    - Keep image files under 500KB (never exceed 1MB)  
+    - Use modern formats like WebP  
+    - Add descriptive `alt` text for accessibility and SEO
 
 - **Additional Tips:**  
-    - Use an SEO plugin (e.g., Yoast SEO or Rank Math) for meta tags and sitemap generation.  
-    - Minimize the use of heavy plugins and scripts.  
-    - Enable caching and use a CDN for faster load times.
+    - Use an SEO plugin (e.g., Yoast SEO or Rank Math) for meta tags and sitemaps  
+    - Minimize heavy plugins and scripts  
+    - Enable caching and use a CDN for faster load times
 
-Following these practices will help your site remain fast, accessible, and search engine friendly.
+Following these practices will help keep your site fast, accessible, and search engine friendly.
+
+---
+
+## Template File Guidance
+
+To create custom templates for custom post types, use the following naming conventions:
+
+- `single-slug.php` – For single post type entries
+- `archive-slug.php` – For post type archives
+
+Replace `slug` with your custom post type’s slug.
