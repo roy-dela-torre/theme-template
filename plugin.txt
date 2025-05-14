@@ -1,2 +1,7 @@
-Classic Editor and Classic Widgets
 Classic Editor
+Custom Post Type UI
+Taxonomy Switcher
+W3 Total Cache
+What The File
+Yoast SEO
+WP Ultimate CSV Importer
