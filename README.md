@@ -87,3 +87,7 @@ To create custom templates for custom post types, use the following naming conve
 - `archive-slug.php` – For post type archives
 
 Replace `slug` with your custom post type’s slug.
+
+
+For stylesheet-manager.php and script-manager.php
+Review the file and remove any unnecessary or unused template code. Some style or script formats included are only for demonstration purposes—feel free to disregard them and delete anything that isn't needed for the actual implementation.

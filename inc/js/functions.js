@@ -81,4 +81,32 @@ $(document).ready(function () {
         { min: 768, size: 2 },
         { min: 0, size: 1 }
     ]);
+
+    // Alert if page has missing H1
+    if ($('h1').length === 0) {
+        alert('Warning: This page is missing an <h1> tag.');
+    }
+
+    // Alert if page has duplicated H1
+    if ($('h1').length > 1) {
+        alert('Warning: This page has duplicated <h1> tags.');
+    }
+
+    // Alert if page has duplicated H2
+    if ($('h2').length > 1) {
+        alert('Warning: This page has duplicated <h2> tags.');
+    }
+
+    // Alert if there are broken images
+    $('img').each(function () {
+        var img = this;
+        // Only check if not already errored
+        $(img).one('error', function () {
+            alert('Warning: Broken image detected: ' + $(img).attr('src'));
+        });
+        // For cached images, trigger error if already broken
+        if (img.complete && typeof img.naturalWidth !== "undefined" && img.naturalWidth === 0) {
+            $(img).trigger('error');
+        }
+    });
 });

@@ -1,5 +1,6 @@
 Classic Editor
 Custom Post Type UI
+Image Optimizer Plugin
 Taxonomy Switcher
 W3 Total Cache
 What The File
