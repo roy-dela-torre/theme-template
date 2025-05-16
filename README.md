@@ -1,22 +1,22 @@
 ﻿=== Theme Name ===
 ## Contributors
 
-*List your name or GitHub username here.*
+*Add your name or GitHub username here.*
 
 ---
 
 ## Description
 
-**Theme Template** is a modern, developer-friendly WordPress theme built for flexibility and customization. Drawing inspiration from Shopify’s `theme.liquid` architecture, it features a modular layout, reusable components, and adheres to current best practices—all while remaining lightweight and efficient.
+**Theme Template** is a modern, developer-focused WordPress theme designed for flexibility and customization. Inspired by Shopify’s `theme.liquid` structure, it offers a modular layout, reusable components, and follows current best practices—all while staying lightweight and efficient.
 
-Ideal for blogs, business websites, or portfolios, this theme offers a solid foundation without unnecessary features. It’s compatible with popular plugins and optimized for both speed and SEO.
+Perfect for blogs, business sites, or portfolios, this theme provides a solid foundation without unnecessary bloat. It’s compatible with popular plugins and optimized for speed and SEO.
 
 ---
 
 ## Installation
 
 1. Upload the theme folder to `/wp-content/themes/`
-2. In your WordPress dashboard, navigate to Appearance > Themes
+2. In your WordPress dashboard, go to Appearance > Themes
 3. Activate the theme
 
 ---
@@ -36,7 +36,7 @@ Ideal for blogs, business websites, or portfolios, this theme offers a solid fou
 
 ## License
 
-This theme is licensed under the GPL v2 or later.
+This theme is licensed under GPL v2 or later.
 
 ---
 
@@ -81,13 +81,18 @@ Following these practices will help keep your site fast, accessible, and search 
 
 ## Template File Guidance
 
-To create custom templates for custom post types, use the following naming conventions:
+To create custom templates for custom post types, use these naming conventions:
 
 - `single-slug.php` – For single post type entries
 - `archive-slug.php` – For post type archives
 
 Replace `slug` with your custom post type’s slug.
 
+For `stylesheet-manager.php` and `script-manager.php`, review the files and remove any unnecessary or unused template code. Some styles or scripts are included only for demonstration—feel free to delete anything not needed for your implementation.
 
-For stylesheet-manager.php and script-manager.php
-Review the file and remove any unnecessary or unused template code. Some style or script formats included are only for demonstration purposes—feel free to disregard them and delete anything that isn't needed for the actual implementation.
+To keep your code clean when using SVGs, use the following example:
+
+```php
+$svg_path = get_stylesheet_directory_uri() . '/assets/svg/';
+echo file_get_contents($svg_path . 'search.svg');
+```
